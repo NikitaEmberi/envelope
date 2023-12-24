@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <p>
+                            The first time we met, there wasn't that love-at-first-sight thing. 
+                            But as time passed, I started falling for you, bit by bit. Your personality, 
+                            your voice, your hair, the warmth you give off, your kindness, that hug of yours, 
+                            the words you say, your sense of humor—all of it clicked. It hit me: you're exactly 
+                            what I've been searching for. So, aashu bangaram, you truly are very precious to me 🤗✨ and I completely, genuinely, wholeheartedly,
+                            (insert all the adverbs that fit here 😂, bcoz this is the height of creativity I could reach 🙂) నేను నిన్ను ప్రేమిస్తున్నాను 😘💖👑
+                        </p>
+                        
+                    </div>
+                    <strong ><p style="text-align: center; font-size: x-small;"> yours truly, </br> Nikma </p></strong>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
